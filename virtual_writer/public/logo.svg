@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" stroke="none" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="path_1" d="M500 0L500 0L500 500L0 500L0 0L500 0Z" />
+    <rect id="rect_2" x="0" y="0" width="500" height="500" />
+    <clipPath id="clip_path_3">
+      <use xlink:href="#rect_2" />
+    </clipPath>
+    <path id="path_4" d="M502 0L502 0L502 502L0 502L0 0L502 0Z" />
+    <rect id="rect_5" x="0" y="0" width="502" height="502" />
+    <clipPath id="clip_path_6">
+      <use xlink:href="#rect_5" />
+    </clipPath>
+  </defs>
+  <g id="IconHolder" opacity="1" clip-path="url(#clip_path_3)">
+    <g>
+      <use xlink:href="#path_1" style="fill:#FFFFFF;fill-rule:evenodd;fill-opacity:0;mix-blend-mode:normal;" />
+      <g>
+        <g id="File" opacity="1" clip-path="url(#clip_path_6)" transform="translate(-1 0)">
+          <g>
+            <use xlink:href="#path_4" style="mix-blend-mode:normal;" />
+            <g>
+              <path id="Shape" d="M41.8334 0L209.167 0L334.667 125.5L334.667 376.5C334.667 399.508 315.842 418.333 292.833 418.333L41.8334 418.333C18.825 418.333 0 399.508 0 376.5L0 41.8333C0 18.825 18.825 0 41.8334 0ZM188.251 145.23L303.292 145.23L188.251 30.1882L188.251 145.23Z" style="fill:#000000;fill-rule:evenodd;mix-blend-mode:normal;" transform="matrix(1 -0 0 1 83 42)" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
