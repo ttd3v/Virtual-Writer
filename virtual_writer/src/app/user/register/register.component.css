@@ -1,0 +1,105 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+#body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    font-family: "Playfair Display",serif,Arial, Helvetica, sans-serif;
+}
+#frame{
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 0 0 1vmin 0 rgba(200,200,200,.5);
+    border-radius: 1vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+h1{
+    text-align: center;
+    margin-top: 0;
+}
+input{
+    align-self: center;
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    border-radius: 1vmin;
+    border-style: solid;
+    text-indent: .25rem;
+    outline: none;
+    font-family: "Prociono",serif,Arial, Helvetica, sans-serif;
+    transition: all 100ms linear;
+}
+input:focus::placeholder{
+    border-color: black;
+    color:black;
+    font-weight: normal;
+}
+input:focus{
+    border-color: black;
+    font-weight: 450;
+}
+
+button{
+    width: 16rem;
+    height: 2rem;
+    align-self: center;
+    font-size: 1rem;
+    background: none;
+    border-style: solid;
+    border-radius: .3rem;
+    border-color: rgba(0,0,0,.7);
+    color: rgba(0,0,0,.7);
+    font-family: "Prociono",serif,Arial, Helvetica, sans-serif;
+    border-width: .125rem;
+    user-select: none;
+    transition: all 100ms linear;
+}
+button:hover{
+    background: rgba(0,0,0,.9);
+    border-color: rgb(0,0,0);
+    color: white;
+    transition: all 100ms linear;
+}
+a{
+    font-family: "Prociono",serif,Arial, Helvetica, sans-serif;;
+    color: rgba(0,0,0,.7);
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+    margin-top: .5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    font-weight:100;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+@media screen and (max-width:500px) {
+    #body{
+        margin: 0;
+        padding: 0;
+    }
+    #frame{
+        width: 20rem;
+        margin: 0;
+        padding: 0;
+    }
+    input{
+        width: 80%;
+    }
+    button{
+        width: 75%;
+    }
+}
