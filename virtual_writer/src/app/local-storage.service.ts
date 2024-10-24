@@ -4,35 +4,42 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LocalStorageService {
-  storage : Window['localStorage'] | null = null;
-  constructor() { 
-    this.storage = window.localStorage;
-  };
-  setItem(key : string, value : string) : void{
-    if (this.storage){
-      this.storage.setItem(key,value)
+  private storage: Storage;
+
+  constructor() {
+    this.storage = localStorage; // Pode assumir direto, sem checar `window`.
+  }
+
+  setItem(key: string, value: string): void {
+    try {
+      this.storage.setItem(key, value);
+    } catch (error) {
+      console.error('Erro ao salvar no localStorage:', error);
     }
-  };
-  getItem(key:string) : string|null{
-    if (this.storage){
-      try{
-        return this.storage.getItem(key)
-      }finally{
-        return null
-      }
+  }
+
+  getItem(key: string): string | null {
+    try {
+      return this.storage.getItem(key);
+    } catch (error) {
+      console.error('Erro ao ler do localStorage:', error);
+      return null;
     }
-    else{
-      return null
-    }
-  };
-  clear() : void{
-    if (this.storage){
-      this.storage.clear()
-    }
-  };
-  removeItem(key:string) : void{
-    if (this.storage){
+  }
+
+  removeItem(key: string): void {
+    try {
       this.storage.removeItem(key);
+    } catch (error) {
+      console.error('Erro ao remover do localStorage:', error);
     }
-  };
+  }
+
+  clear(): void {
+    try {
+      this.storage.clear();
+    } catch (error) {
+      console.error('Erro ao limpar o localStorage:', error);
+    }
+  }
 }

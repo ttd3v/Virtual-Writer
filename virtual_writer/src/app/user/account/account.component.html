@@ -1,1 +1,24 @@
-<p>account works!</p>
+<div id="body" class="{{theme}}">
+    <div id="frame" class="{{theme}}">
+        <section id="list" class="{{theme}}">
+            <div id="profile-card" class="{{theme}}">
+                <section id="profile-card-top" class="{{theme}}">
+                    <img id="profile-picture" src="default_pfp.svg"/>
+                    <p class="{{theme}}" id="profile-username">{{username}}</p>
+                </section>
+                <p class="{{theme}}" id="profile-about">{{about}}</p>
+            </div>
+            <article>
+                <textarea class="{{theme}}" id="username">{{username}}</textarea>
+                <textarea class="{{theme}}" id="about">{{about}}</textarea>
+            </article>
+            <article>
+                <div class="section {{theme}}">
+                    <p class="selection-paragraph {{theme}}">Dark mode</p>
+
+                    <input type="checkbox" class="selection-check {{theme}}" id="dark-theme-input" [checked]="theme==='dark'" (change)="change_theme()"/>
+                </div>
+            </article>
+        </section>
+    </div>
+</div>
