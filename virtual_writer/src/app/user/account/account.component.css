@@ -145,3 +145,26 @@ textarea:is(#about){
     border-color: rgba(0,0,0,.5);
     color: white;
 }
+@media screen and (max-width: 500px) {
+    #frame{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+    }
+    #list{
+        margin:4rem;
+        align-self: center;
+        place-self: center;
+        justify-self: center;
+    }
+    #profile-card{
+        width: 22rem;
+    }
+    textarea{
+        width: 22rem;
+    }
+    .section{
+        width: 22rem;
+    }
+}

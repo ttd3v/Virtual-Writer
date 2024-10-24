@@ -1,9 +1,9 @@
 <div id="body">
     <div id="frame">
         <h1>Login</h1> 
-        <input type="email" placeholder="Email address" />
-        <input type="password" placeholder="Password" />
-        <button>Submit</button>
+        <input type="email" placeholder="Email address" (input)="isvalid_email($event)"/>
+        <input type="password" placeholder="Password" (input)="isvalid_password($event)"/>
+        <button (click)="login()" >Submit</button>
         <a href="/register">Register instead</a>
     </div>
 </div>

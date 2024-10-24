@@ -9,8 +9,8 @@
                 <p class="{{theme}}" id="profile-about">{{about}}</p>
             </div>
             <article>
-                <textarea class="{{theme}}" id="username">{{username}}</textarea>
-                <textarea class="{{theme}}" id="about">{{about}}</textarea>
+                <textarea (change)="change_name($event)" class="{{theme}}" id="username">{{username}}</textarea>
+                <textarea (change)="change_about($event)" class="{{theme}}" id="about">{{about}}</textarea>
             </article>
             <article>
                 <div class="section {{theme}}">

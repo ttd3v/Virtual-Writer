@@ -71,12 +71,9 @@ export class RegisterComponent {
       .then(response => response.json())
       .then(data => {
         if ('ok' in data && data['ok'] === true){
-          localStorage.setItem('auth_key',data['auth_key']);
-          localStorage.setItem('username',data['username']);
-          localStorage.setItem('age',data['age']);
-          window.location.replace('http://localhost:4200/dashboard')
+          window.location.replace('http://localhost:4200/login')
         }else if('ok' in data && data['ok'] === false){
-          alert("fail")
+          alert("failed")
         }
       })
     }

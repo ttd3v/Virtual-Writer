@@ -79,6 +79,14 @@ a:hover{
     text-decoration: underline;
     color: black;
 }
+.valid_input{
+    color: rgb(100,100,255);
+    border-color: rgb(100,100,255);
+}
+.invalid_input{
+    color: rgb(255,50,50);
+    border-color: rgb(255,50,50);
+}
 @media screen and (max-width:500px) {
     #body{
         margin: 0;
